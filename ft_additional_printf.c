@@ -36,7 +36,7 @@ void	*ft_calloc(size_t num, size_t size)
 	return (dest);
 }
 
-static size_t	ft_nlen(unsigned long long n, size_t range_len)
+size_t	ft_nlen(unsigned long long n, size_t range_len)
 {
 	size_t	len;
 
