@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+//#include <stdio.h>
 
 void	ft_checkformat(va_list va, char *str, size_t *n)
 {
@@ -55,3 +56,32 @@ int	ft_printf(const char *str, ...)
 	va_end(va);
 	return (n);
 }
+
+// int	main(void)
+// {
+// 	int i = 255;
+// 	void *p = &i;
+// 	char c = 'a';
+// 	char *s = "42 Warsaw";
+
+// 	ft_printf("My function -> Print character: %c\n",c);
+// 	printf("Oryginal function -> Print character: %c\n",c);
+// 	ft_printf("My function -> Print string: %s\n",s);
+// 	printf("Oryginal function -> Print string: %s\n",s);
+// 	ft_printf("My function -> Print pointer: %p\n", p);
+// 	printf("Oryginal function -> Print pointer: %p\n", p);
+// 	ft_printf("My function -> Print number: %i\n",i);
+// 	printf("Oryginal function -> Print number: %i\n",i);
+// 	ft_printf("My function -> Print number: %d\n",i);
+// 	printf("Oryginal function -> Print number: %d\n",i);
+// 	ft_printf("My function -> Print number: %u\n",i);
+// 	printf("Oryginal function -> Print number: %u\n",i);
+// 	ft_printf("My function -> 255 in hexadecimal = %x\n",i);
+// 	printf("Oryginal function -> 255 in hexadecimal = %x\n",i);
+// 	ft_printf("My function -> 255 in HEXADECIMAL = %X\n",i);
+// 	printf("Oryginal function -> 255 in HEXADECIMAL = %X\n",i);
+// 	ft_printf("My function -> Print fraction symbol: %%\n");
+// 	printf("Oryginal function -> Print fraction symbol: %%\n");
+
+// 	return 0;
+// }
